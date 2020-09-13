@@ -14,6 +14,7 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
+
 // RunWith AndroidJunit4: Default test runner
 @RunWith(AndroidJUnit4.class)
 public class OrderActivityBasicTest {
@@ -40,5 +41,4 @@ public class OrderActivityBasicTest {
         //verify if the cost changes 5 to 0
         onView(withId(R.id.cost_text_view)).check(matches(withText("$0.00")));
     }
-
 }
